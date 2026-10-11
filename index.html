@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lets Go Cafe | سوهاج</title>
+<title>Lets Go Cafe & Restaurant | سوهاج</title>
 
 <!-- SEO -->
-<meta name="description" content="Lets Go Cafe - مطعم وكافيه في سوهاج. برجر، بيتزا، سكانر، كريب، مشروبات. اطلب دلوقتي!">
-<meta name="keywords" content="Lets Go Cafe, سوهاج, مطعم, كافيه, برجر, بيتزا, سكانر, دليفري">
-<meta property="og:title" content="Lets Go Cafe | سوهاج">
+<meta name="description" content="مطعم وكافيه Lets Go - سوهاج. برجر، بيتزا، سكانر، كريب، مشروبات. اطلب دلوقتي!">
+<meta name="keywords" content="Lets Go Cafe, مطعم وكافيه, سوهاج, برجر, بيتزا, سكانر, دليفري">
+<meta property="og:title" content="Lets Go Cafe & Restaurant | سوهاج">
 <meta property="og:description" content="مطعم وكافيه - اطلب دلوقتي">
 <meta property="og:type" content="restaurant">
-<meta name="theme-color" content="#1a1208">
+<meta name="theme-color" content="#0a0a0a">
 
 <!-- Favicon -->
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
@@ -25,29 +25,27 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   :root, body.dark {
-    --bg: #1a1208;
-    --card: rgba(45,32,15,0.6);
-    --gold: #d4a574;
-    --gold-2: #b8860b;
-    --orange: #e67e22;
-    --orange-2: #d35400;
-    --text: #fff8f0;
-    --muted: #b8a888;
-    --border: rgba(212,165,116,0.25);
-    --glow: rgba(230,126,34,0.4);
+    --bg: #0a0a0a;
+    --card: rgba(20,20,20,0.75);
+    --gold: #d4af37;
+    --gold-2: #b8941e;
+    --gold-light: #f4e4a8;
+    --text: #ffffff;
+    --muted: #a89e88;
+    --border: rgba(212,175,55,0.25);
+    --glow: rgba(212,175,55,0.45);
   }
 
   body.light {
-    --bg: #fff8f0;
+    --bg: #faf7f0;
     --card: rgba(255,255,255,0.85);
-    --gold: #b8860b;
-    --gold-2: #8b6508;
-    --orange: #d35400;
-    --orange-2: #a04000;
-    --text: #2d1b0e;
-    --muted: #8b7355;
-    --border: rgba(184,134,11,0.25);
-    --glow: rgba(211,84,0,0.3);
+    --gold: #8b6914;
+    --gold-2: #6b5010;
+    --gold-light: #a67c00;
+    --text: #1a1208;
+    --muted: #6b5d42;
+    --border: rgba(139,105,20,0.25);
+    --glow: rgba(139,105,20,0.3);
   }
 
   html { scroll-behavior: smooth; }
@@ -71,13 +69,13 @@
   .blob {
     position: absolute;
     border-radius: 50%;
-    filter: blur(90px);
-    opacity: 0.4;
+    filter: blur(100px);
+    opacity: 0.3;
     animation: floatBlob 22s infinite ease-in-out;
   }
-  .blob-1 { width: 420px; height: 420px; background: radial-gradient(circle, #e67e22, transparent); top: -10%; right: -10%; }
-  .blob-2 { width: 500px; height: 500px; background: radial-gradient(circle, #b8860b, transparent); bottom: -20%; left: -15%; animation-delay: -8s; }
-  .blob-3 { width: 350px; height: 350px; background: radial-gradient(circle, #d35400, transparent); top: 45%; left: 40%; animation-delay: -15s; opacity: 0.25; }
+  .blob-1 { width: 420px; height: 420px; background: radial-gradient(circle, #d4af37, transparent); top: -10%; right: -10%; }
+  .blob-2 { width: 500px; height: 500px; background: radial-gradient(circle, #b8941e, transparent); bottom: -20%; left: -15%; animation-delay: -8s; }
+  .blob-3 { width: 350px; height: 350px; background: radial-gradient(circle, #8b6914, transparent); top: 45%; left: 40%; animation-delay: -15s; opacity: 0.2; }
 
   @keyframes floatBlob {
     0%, 100% { transform: translate(0, 0) scale(1); }
@@ -89,19 +87,19 @@
     position: fixed; top: 0; width: 100%;
     padding: 16px 6%;
     display: flex; justify-content: space-between; align-items: center;
-    background: rgba(26,18,8,0.75);
+    background: rgba(10,10,10,0.85);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
     z-index: 100;
     transition: 0.4s;
   }
-  body.light nav { background: rgba(255,248,240,0.85); }
+  body.light nav { background: rgba(250,247,240,0.9); }
 
   .logo {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.4rem; font-weight: 700;
-    background: linear-gradient(90deg, var(--orange), var(--gold));
+    font-size: 1.3rem; font-weight: 700;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
     -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     background-clip: text;
     display: flex; align-items: center; gap: 8px;
@@ -118,15 +116,15 @@
   .nav-links a::after {
     content: ''; position: absolute;
     bottom: 0; right: 0; width: 0; height: 2px;
-    background: linear-gradient(90deg, var(--orange), var(--gold));
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
     transition: 0.3s; border-radius: 2px;
   }
-  .nav-links a:hover { color: var(--orange); }
+  .nav-links a:hover { color: var(--gold); }
   .nav-links a:hover::after { width: 100%; }
 
   .theme-btn, .menu-btn {
     background: var(--card); border: 1px solid var(--border);
-    color: var(--text);
+    color: var(--gold);
     width: 42px; height: 42px;
     border-radius: 12px; cursor: pointer;
     font-size: 1.1rem;
@@ -134,7 +132,7 @@
     transition: 0.3s; backdrop-filter: blur(10px);
   }
   .theme-btn:hover, .menu-btn:hover {
-    border-color: var(--orange);
+    border-color: var(--gold);
     box-shadow: 0 0 20px var(--glow);
   }
   .menu-btn { display: none; }
@@ -143,7 +141,7 @@
     position: fixed; top: 0; right: -100%;
     width: 75%; max-width: 320px;
     height: 100vh;
-    background: rgba(26,18,8,0.98);
+    background: rgba(10,10,10,0.98);
     backdrop-filter: blur(25px);
     border-left: 1px solid var(--border);
     z-index: 1000;
@@ -151,7 +149,7 @@
     transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex; flex-direction: column; gap: 5px;
   }
-  body.light .mobile-menu { background: rgba(255,248,240,0.98); }
+  body.light .mobile-menu { background: rgba(250,247,240,0.98); }
   .mobile-menu.open { right: 0; }
   .mobile-menu a {
     color: var(--text); text-decoration: none;
@@ -160,21 +158,21 @@
     transition: 0.3s; display: flex; align-items: center; gap: 12px;
   }
   .mobile-menu a:hover {
-    background: rgba(230,126,34,0.12);
-    color: var(--orange);
+    background: rgba(212,175,55,0.12);
+    color: var(--gold);
     transform: translateX(-5px);
   }
   .menu-close {
     position: absolute; top: 20px; left: 20px;
     background: var(--card); border: 1px solid var(--border);
-    color: var(--text);
+    color: var(--gold);
     width: 40px; height: 40px; border-radius: 10px;
     cursor: pointer; font-size: 1.2rem;
     display: flex; align-items: center; justify-content: center;
   }
   .menu-overlay {
     position: fixed; inset: 0;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.7);
     z-index: 999; opacity: 0; visibility: hidden;
     transition: 0.4s;
   }
@@ -192,7 +190,7 @@
     display: inline-flex; align-items: center; gap: 8px;
     padding: 8px 20px;
     border: 1px solid var(--border); border-radius: 50px;
-    color: var(--orange); font-size: 0.85rem; font-weight: 600;
+    color: var(--gold); font-size: 0.85rem; font-weight: 600;
     margin-bottom: 25px; background: var(--card);
     backdrop-filter: blur(10px);
     animation: fadeInDown 1s ease, pulseGlow 3s infinite;
@@ -213,7 +211,7 @@
     animation: fadeInUp 1s ease 0.2s both;
   }
   .hero h1 .gradient-text {
-    background: linear-gradient(90deg, var(--orange), var(--gold), var(--orange));
+    background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
     background-size: 200% auto;
     -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -246,13 +244,14 @@
     cursor: pointer; border: none;
   }
   .btn-primary {
-    background: linear-gradient(90deg, var(--orange), var(--gold));
-    color: white;
-    box-shadow: 0 4px 20px rgba(230,126,34,0.4);
+    background: linear-gradient(90deg, var(--gold-2), var(--gold));
+    color: #0a0a0a;
+    box-shadow: 0 4px 20px rgba(212,175,55,0.4);
+    font-weight: 900;
   }
   .btn-primary:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 40px rgba(230,126,34,0.7);
+    box-shadow: 0 10px 40px rgba(212,175,55,0.7);
   }
   .btn-outline {
     border: 1.5px solid var(--border);
@@ -260,7 +259,7 @@
     backdrop-filter: blur(10px);
   }
   .btn-outline:hover {
-    border-color: var(--orange); color: var(--orange);
+    border-color: var(--gold); color: var(--gold);
     transform: translateY(-4px);
   }
 
@@ -275,7 +274,7 @@
   .section-title::after {
     content: ''; display: block;
     width: 60px; height: 4px;
-    background: linear-gradient(90deg, var(--orange), var(--gold));
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
     margin: 15px auto 0; border-radius: 4px;
   }
   .section-sub {
@@ -325,12 +324,12 @@
     backdrop-filter: blur(10px);
   }
   .filter-tab:hover {
-    border-color: var(--orange);
-    color: var(--orange);
+    border-color: var(--gold);
+    color: var(--gold);
   }
   .filter-tab.active {
-    background: linear-gradient(90deg, var(--orange), var(--gold));
-    color: white;
+    background: linear-gradient(90deg, var(--gold-2), var(--gold));
+    color: #0a0a0a;
     border-color: transparent;
     box-shadow: 0 4px 15px var(--glow);
   }
@@ -353,8 +352,8 @@
   }
   .menu-card:hover {
     transform: translateY(-8px);
-    border-color: var(--orange);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.35), 0 0 30px var(--glow);
+    border-color: var(--gold);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5), 0 0 30px var(--glow);
   }
 
   .card-thumb {
@@ -362,27 +361,17 @@
     display: flex; align-items: center; justify-content: center;
     position: relative; overflow: hidden;
     font-size: 3.5rem;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
   }
   .card-thumb::after {
     content: ''; position: absolute; inset: 0;
     background: linear-gradient(180deg, transparent 50%, var(--card) 100%);
   }
-  .card-thumb span { position: relative; z-index: 1; animation: float 3s ease-in-out infinite; }
+  .card-thumb span { position: relative; z-index: 1; animation: float 3s ease-in-out infinite; filter: drop-shadow(0 0 15px rgba(212,175,55,0.4)); }
   @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-8px); }
   }
-
-  .t-burger { background: linear-gradient(135deg, #e67e22, #d35400); }
-  .t-chicken { background: linear-gradient(135deg, #c0392b, #e67e22); }
-  .t-skillet { background: linear-gradient(135deg, #8b6508, #d4a574); }
-  .t-sandwich { background: linear-gradient(135deg, #16a085, #27ae60); }
-  .t-pizza { background: linear-gradient(135deg, #c0392b, #e74c3c); }
-  .t-pasta { background: linear-gradient(135deg, #d35400, #e67e22); }
-  .t-drink { background: linear-gradient(135deg, #2980b9, #3498db); }
-  .t-dessert { background: linear-gradient(135deg, #8e44ad, #c39bd3); }
-  .t-soup { background: linear-gradient(135deg, #b8860b, #d4a574); }
-  .t-salad { background: linear-gradient(135deg, #27ae60, #16a085); }
 
   .card-body {
     padding: 20px 22px 22px;
@@ -397,7 +386,7 @@
   }
   .card-category {
     font-size: 0.75rem;
-    color: var(--orange);
+    color: var(--gold);
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -413,25 +402,19 @@
     justify-content: space-between;
     gap: 10px;
   }
-  .price {
-    font-size: 1.15rem; font-weight: 900;
-    background: linear-gradient(90deg, var(--orange), var(--gold));
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
   .price-range {
     font-size: 0.95rem;
     color: var(--gold);
-    font-weight: 700;
+    font-weight: 800;
   }
   .card-btn {
-    background: linear-gradient(90deg, var(--orange), var(--gold));
-    color: white;
+    background: linear-gradient(90deg, var(--gold-2), var(--gold));
+    color: #0a0a0a;
     border: none;
     padding: 8px 18px;
     border-radius: 10px;
     font-family: 'Cairo', sans-serif;
-    font-weight: 700; font-size: 0.85rem;
+    font-weight: 800; font-size: 0.85rem;
     cursor: pointer;
     transition: 0.3s;
     display: inline-flex; align-items: center; gap: 5px;
@@ -460,8 +443,8 @@
     content: ''; position: absolute;
     top: -50%; left: -50%; width: 200%; height: 200%;
     background: conic-gradient(from 0deg, transparent, var(--glow), transparent 30%);
-    animation: rotate 7s linear infinite;
-    z-index: -1; opacity: 0.4;
+    animation: rotate 8s linear infinite;
+    z-index: -1; opacity: 0.35;
   }
   @keyframes rotate {
     0% { transform: rotate(0deg); }
@@ -472,7 +455,7 @@
   .contact-box h3 {
     font-size: 1.7rem; margin-bottom: 15px;
     font-weight: 900;
-    background: linear-gradient(90deg, var(--orange), var(--gold));
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
     -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     background-clip: text;
   }
@@ -484,14 +467,14 @@
     margin: 30px 0;
   }
   .contact-item {
-    background: rgba(230,126,34,0.08);
+    background: rgba(212,175,55,0.06);
     border: 1px solid var(--border);
     border-radius: 16px;
     padding: 18px 15px;
     transition: 0.3s;
   }
   .contact-item:hover {
-    border-color: var(--orange);
+    border-color: var(--gold);
     transform: translateY(-4px);
   }
   .contact-icon { font-size: 1.8rem; margin-bottom: 8px; display: block; }
@@ -519,7 +502,6 @@
     box-shadow: 0 15px 40px rgba(37,211,102,0.6);
   }
 
-  /* === Footer === */
   footer {
     text-align: center; padding: 35px 20px;
     color: var(--muted); font-size: 0.88rem;
@@ -528,13 +510,13 @@
     line-height: 1.9;
   }
   footer a {
-    color: var(--orange);
+    color: var(--gold);
     text-decoration: none;
     font-weight: 700;
     transition: 0.3s;
   }
   footer a:hover {
-    color: var(--gold);
+    color: var(--gold-light);
     text-decoration: underline;
   }
   .footer-restaurant {
@@ -554,9 +536,10 @@
     nav { padding: 14px 5%; }
     section { padding: 60px 5%; }
     .hero { padding: 100px 5% 40px; }
-    .blob { filter: blur(60px); }
+    .blob { filter: blur(70px); }
     .menu-grid { grid-template-columns: 1fr; }
     .contact-box { padding: 35px 20px; }
+    .logo { font-size: 1.05rem; }
   }
 </style>
 </head>
@@ -578,7 +561,7 @@
 </div>
 
 <nav>
-  <div class="logo">☕ Lets Go</div>
+  <div class="logo">☕ Lets Go Cafe</div>
   <div class="nav-right">
     <div class="nav-links">
       <a href="#home">الرئيسية</a>
@@ -592,7 +575,7 @@
 
 <!-- Hero -->
 <section class="hero" id="home">
-  <span class="badge">✨ أهلاً بيك في Lets Go Cafe</span>
+  <span class="badge">✨ أهلاً بيك في مطعم وكافيه Lets Go</span>
   <h1>طعم <span class="gradient-text">مش عادي</span><br>في قلب سوهاج</h1>
   <p class="hero-desc">
     برجر، بيتزا، سكانر، كريب، ومشروبات. كل حاجة بتحبها في مكان واحد.
@@ -672,42 +655,32 @@
 <footer>
   صُنع بـ ❤️ بواسطة <a href="https://menamon713-bit.github.io" target="_blank" rel="noopener">Mina Developer</a>
   <br>
-  <span class="footer-restaurant">لمطعم Lets Go Cafe © 2025</span>
+  <span class="footer-restaurant">لمطعم وكافيه Lets Go Cafe © 2026</span>
 </footer>
 
 <script>
-  // === Menu Data ===
   const menuItems = [
-    { name: "برجر كلاسيك", category: "burger", catName: "برجر", price: "حتى 140 ج", emoji: "🍔", thumb: "t-burger" },
-    { name: "تشيز برجر", category: "burger", catName: "برجر", price: "حتى 140 ج", emoji: "🍔", thumb: "t-burger" },
-
-    { name: "وجبات الفراخ", category: "chicken", catName: "فراخ", price: "160 — 212 ج", emoji: "🍗", thumb: "t-chicken" },
-    { name: "فرايد تشيكن", category: "chicken", catName: "فراخ", price: "حتى 140 ج", emoji: "🍗", thumb: "t-chicken" },
-
-    { name: "سكانر فراخ", category: "skillet", catName: "سكانر", price: "206 ج", emoji: "🍳", thumb: "t-skillet" },
-    { name: "سكانر لحم", category: "skillet", catName: "سكانر", price: "235 ج", emoji: "🍳", thumb: "t-skillet" },
-
-    { name: "سندوتشات الفراخ", category: "sandwich", catName: "سندوتشات", price: "78 — 106 ج", emoji: "🥪", thumb: "t-sandwich" },
-    { name: "سندوتشات اللحم", category: "sandwich", catName: "سندوتشات", price: "80 — 99 ج", emoji: "🥙", thumb: "t-sandwich" },
-
-    { name: "بيتزا مارجريتا", category: "pizza", catName: "بيتزا", price: "95 — 155 ج", emoji: "🍕", thumb: "t-pizza" },
-    { name: "فطائر (Pies)", category: "pizza", catName: "فطائر", price: "130 — 165 ج", emoji: "🥧", thumb: "t-pizza" },
-
-    { name: "مكرونة (Pasta)", category: "pasta", catName: "مكرونة", price: "70 — 115 ج", emoji: "🍝", thumb: "t-pasta" },
-    { name: "كريب (Crepe)", category: "pasta", catName: "كريب", price: "65 — 125 ج", emoji: "🥞", thumb: "t-pasta" },
-
-    { name: "شوربة", category: "soup", catName: "شوربة", price: "55 — 65 ج", emoji: "🍜", thumb: "t-soup" },
-    { name: "فتة", category: "soup", catName: "فتة", price: "102 ج", emoji: "🍲", thumb: "t-soup" },
-
-    { name: "مقبلات", category: "salad", catName: "مقبلات", price: "30 — 55 ج", emoji: "🥗", thumb: "t-salad" },
-    { name: "سلطات", category: "salad", catName: "سلطات", price: "30 — 80 ج", emoji: "🥗", thumb: "t-salad" },
-
-    { name: "كوكتيلات وميلك شيك", category: "drink", catName: "مشروبات", price: "40 — 70 ج", emoji: "🥤", thumb: "t-drink" },
-    { name: "عصائر طازجة وسموثي", category: "drink", catName: "مشروبات", price: "38 — 60 ج", emoji: "🍹", thumb: "t-drink" },
-    { name: "مشروبات غازية", category: "drink", catName: "مشروبات", price: "10 — 45 ج", emoji: "🥤", thumb: "t-drink" },
-
-    { name: "حلويات", category: "dessert", catName: "حلويات", price: "40 — 99 ج", emoji: "🍰", thumb: "t-dessert" },
-    { name: "وجبات الأطفال", category: "dessert", catName: "أطفال", price: "80 ج", emoji: "🧒", thumb: "t-dessert" }
+    { name: "برجر كلاسيك", category: "burger", catName: "برجر", price: "حتى 140 ج", emoji: "🍔" },
+    { name: "تشيز برجر", category: "burger", catName: "برجر", price: "حتى 140 ج", emoji: "🍔" },
+    { name: "وجبات الفراخ", category: "chicken", catName: "فراخ", price: "160 — 212 ج", emoji: "🍗" },
+    { name: "فرايد تشيكن", category: "chicken", catName: "فراخ", price: "حتى 140 ج", emoji: "🍗" },
+    { name: "سكانر فراخ", category: "skillet", catName: "سكانر", price: "206 ج", emoji: "🍳" },
+    { name: "سكانر لحم", category: "skillet", catName: "سكانر", price: "235 ج", emoji: "🍳" },
+    { name: "سندوتشات الفراخ", category: "sandwich", catName: "سندوتشات", price: "78 — 106 ج", emoji: "🥪" },
+    { name: "سندوتشات اللحم", category: "sandwich", catName: "سندوتشات", price: "80 — 99 ج", emoji: "🥙" },
+    { name: "بيتزا مارجريتا", category: "pizza", catName: "بيتزا", price: "95 — 155 ج", emoji: "🍕" },
+    { name: "فطائر (Pies)", category: "pizza", catName: "فطائر", price: "130 — 165 ج", emoji: "🥧" },
+    { name: "مكرونة (Pasta)", category: "pasta", catName: "مكرونة", price: "70 — 115 ج", emoji: "🍝" },
+    { name: "كريب (Crepe)", category: "pasta", catName: "كريب", price: "65 — 125 ج", emoji: "🥞" },
+    { name: "شوربة", category: "soup", catName: "شوربة", price: "55 — 65 ج", emoji: "🍜" },
+    { name: "فتة", category: "soup", catName: "فتة", price: "102 ج", emoji: "🍲" },
+    { name: "مقبلات", category: "salad", catName: "مقبلات", price: "30 — 55 ج", emoji: "🥗" },
+    { name: "سلطات", category: "salad", catName: "سلطات", price: "30 — 80 ج", emoji: "🥗" },
+    { name: "كوكتيلات وميلك شيك", category: "drink", catName: "مشروبات", price: "40 — 70 ج", emoji: "🥤" },
+    { name: "عصائر طازجة وسموثي", category: "drink", catName: "مشروبات", price: "38 — 60 ج", emoji: "🍹" },
+    { name: "مشروبات غازية", category: "drink", catName: "مشروبات", price: "10 — 45 ج", emoji: "🥤" },
+    { name: "حلويات", category: "dessert", catName: "حلويات", price: "40 — 99 ج", emoji: "🍰" },
+    { name: "وجبات الأطفال", category: "dessert", catName: "أطفال", price: "80 ج", emoji: "🧒" }
   ];
 
   const menuGrid = document.getElementById('menuGrid');
@@ -719,7 +692,7 @@
     }
     menuGrid.innerHTML = items.map(item => `
       <div class="menu-card fade-in">
-        <div class="card-thumb ${item.thumb}">
+        <div class="card-thumb">
           <span>${item.emoji}</span>
         </div>
         <div class="card-body">
@@ -774,7 +747,6 @@
     window.open(`https://wa.me/201212515000?text=${msg}`, '_blank');
   }
 
-  // === Theme Toggle ===
   const themeBtn = document.getElementById('themeBtn');
   const body = document.body;
   if (localStorage.getItem('lgc-theme') === 'light') {
@@ -796,7 +768,6 @@
     }
   }
 
-  // === Mobile Menu ===
   const mobileMenu = document.getElementById('mobileMenu');
   const menuOverlay = document.getElementById('menuOverlay');
   function openMenu() {
@@ -810,7 +781,6 @@
     body.style.overflow = '';
   }
 
-  // === Fade in on scroll ===
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) e.target.classList.add('show');
@@ -818,7 +788,6 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-  // === Smooth scroll ===
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
       e.preventDefault();
@@ -827,7 +796,6 @@
     });
   });
 
-  // === Initial Render ===
   renderMenu(menuItems);
 </script>
 
